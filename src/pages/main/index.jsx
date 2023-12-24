@@ -2,10 +2,12 @@ import * as Styles from './mainStyle.jsx';
 import TypeIt from 'typeit-react';
 import Lottie from 'lottie-react';
 import computerLottie from '../../assets/computer.json';
+import Header from '../../components/Header/header.jsx';
 
 export default function Main() {
   return (
     <Styles.Container>
+      <Header/>
       <Styles.FirstViewWrapper>
         <Styles.FirstViewText>
           <TypeIt
