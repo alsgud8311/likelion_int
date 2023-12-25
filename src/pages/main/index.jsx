@@ -3,12 +3,39 @@ import TypeIt from 'typeit-react';
 import Lottie from 'lottie-react';
 import computerLottie from '../../assets/computer.json';
 import Header from '../../components/Header/header.jsx';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Main() {
+  const [isInViewport, setIsInViewport] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if(!ref.current) return ;
+
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+        setIsInViewport(true);
+        } else {
+          setIsInViewport(false);
+        }
+      });
+    }
+
+    const options = {root: null, rootMargin: "0px", threshold: 0};
+
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(ref.current);
+
+    return () => {
+      observer.disconnect();
+    }
+  },[]);
+
   return (
     <Styles.Container>
       <Header/>
-      <Styles.FirstViewWrapper>
+      <Styles.ViewWrapper>
         <Styles.FirstViewText>
           <TypeIt
             getBeforeInit={(instance) => {
@@ -29,7 +56,14 @@ export default function Main() {
           <Styles.FirstViewImage>
             <Lottie animationData={computerLottie}/>
           </Styles.FirstViewImage>
-      </Styles.FirstViewWrapper>
+      </Styles.ViewWrapper>
+      <Styles.ViewWrapper>
+        <Styles.TextWrapper className={isInViewport ? "frame-in" : ""} ref={ref}>
+          <Styles.MainText>우리는 도전합니다</Styles.MainText>
+          <Styles.SubText>문과라서 개발자로서의 길이 힘들다는 생각에서 벗어나, 처음의 마음가짐으로 웹 개발의 처음부터 공부하고, 도전하며 성장합니다.</Styles.SubText>
+        </Styles.TextWrapper>
+      </Styles.ViewWrapper>
+
     </Styles.Container>
     
   );
