@@ -4,6 +4,7 @@ import Lottie from 'lottie-react';
 import computerLottie from '../../assets/computer.json';
 import Header from '../../components/Header/header.jsx';
 import { useEffect, useRef, useState } from 'react';
+import hackerthon from '../../assets/hackerthon.jpg';
 
 export default function Main() {
   const [isInViewport, setIsInViewport] = useState(false);
@@ -58,10 +59,13 @@ export default function Main() {
           </Styles.FirstViewImage>
       </Styles.ViewWrapper>
       <Styles.ViewWrapper>
-        <Styles.TextWrapper className={isInViewport ? "frame-in" : ""} ref={ref}>
+        <Styles.TextWrapper className={isInViewport ? "frame-in-slide" : ""} ref={ref}>
           <Styles.MainText>우리는 도전합니다</Styles.MainText>
           <Styles.SubText>문과라서 개발자로서의 길이 힘들다는 생각에서 벗어나, 처음의 마음가짐으로 웹 개발의 처음부터 공부하고, 도전하며 성장합니다.</Styles.SubText>
         </Styles.TextWrapper>
+        <Styles.ImageWrapper className={isInViewport ? "frame-in-fadeout":""}>
+          <img src={hackerthon} style={{maxWidth: '100%'}}/>
+        </Styles.ImageWrapper>
       </Styles.ViewWrapper>
 
     </Styles.Container>

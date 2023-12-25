@@ -9,10 +9,10 @@ flex-direction: column;
 `
 
 export const ViewWrapper = styled.div`
-height: 80vh;
-display: flex;
-padding: 30px;
-align-items: center;
+    height: 80vh;
+    display: flex;
+    padding: 30px;
+    align-items: center;
 `
 
 export const FirstViewText = styled.div`
@@ -29,7 +29,7 @@ display: flex;
 justify-content: center;
 `
 
-export const FrameInAnimation = keyframes`
+export const FrameInAnimationSlide = keyframes`
     0% {
         opacity: 0;
         transform: translateX(-100%);
@@ -45,8 +45,10 @@ export const TextWrapper = styled.div`
     width: 40%;
     font-weight: 700;
     flex-direction: column;
-    &.frame-in{
-        animation: ${FrameInAnimation} 2s forwards;
+    margin-right: 5%;
+    margin-left: 5%;
+    &.frame-in-slide{
+        animation: ${FrameInAnimationSlide} 2s forwards;
     }
 `
 
@@ -59,3 +61,23 @@ export const SubText = styled.div`
 width: 100%;
 font-size: 1rem;
 `
+
+export const FrameInAnimationFadeout = keyframes`
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+`;
+
+export const ImageWrapper = styled.div`
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &.frame-in-fadeout{
+        animation: ${FrameInAnimationFadeout} 3s
+    }
+    `
