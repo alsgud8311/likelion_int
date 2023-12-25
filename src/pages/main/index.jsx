@@ -5,9 +5,21 @@ import computerLottie from '../../assets/computer.json';
 import Header from '../../components/Header/header.jsx';
 import { useEffect, useRef, useState } from 'react';
 import hackerthon from '../../assets/hackerthon.jpg';
+import project1 from '../../assets/project1.jpg';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Main() {
   const [isInViewport, setIsInViewport] = useState(false);
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   const ref = useRef(null);
 
   useEffect(() => {
@@ -47,6 +59,7 @@ export default function Main() {
                     .type("TY")
                     .pause(500)
                     .type(" TO REALITY</br>")
+                    .pause(400)
                     .type("내 아이디어를 내 손으로 현실")
                     .pause(600)
                     .delete(2)
@@ -55,7 +68,7 @@ export default function Main() {
             }}/>
           </Styles.FirstViewText>
           <Styles.FirstViewImage>
-            <Lottie animationData={computerLottie}/>
+            <Lottie animationData={computerLottie} style={{maxWidth: '100%'}}/>
           </Styles.FirstViewImage>
       </Styles.ViewWrapper>
       <Styles.ViewWrapper>
@@ -67,7 +80,20 @@ export default function Main() {
           <img src={hackerthon} style={{maxWidth: '100%'}}/>
         </Styles.ImageWrapper>
       </Styles.ViewWrapper>
-
+      <Styles.ViewWrapper style={{flexDirection: 'column'}}>
+            <Styles.TextWrapper style={{width: '100%', padding: "0px 15% 0px 20%"}}>
+              <Styles.MainText>우리는 실현합니다</Styles.MainText>
+              <Styles.SubText>POSSIBILITY TO REALITY라는 멋사의 슬로건처럼, 우리는 만들고 싶었던 창의적인 서비스들을 직접 계획하고, 이를 실현시키는데에 목표를 두고 있습니다.</Styles.SubText>
+            </Styles.TextWrapper>
+            <Styles.CarouselWrapper>
+              <Styles.StyledSlider {...sliderSettings}>
+                <div><img src={project1} style={{maxWidth: '100%'}}/></div>
+                <div><img src={project1} style={{maxWidth: '100%'}}/></div>
+                <div><img src={project1} style={{maxWidth: '100%'}}/></div>
+                <div><img src={project1} style={{maxWidth: '100%'}}/></div>
+              </Styles.StyledSlider>
+            </Styles.CarouselWrapper>
+      </Styles.ViewWrapper>
     </Styles.Container>
     
   );

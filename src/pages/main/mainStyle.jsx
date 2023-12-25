@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import Slider from 'react-slick';
 
 export const Container = styled.div`
 width: 100vw;
@@ -9,7 +10,8 @@ flex-direction: column;
 `
 
 export const ViewWrapper = styled.div`
-    height: 80vh;
+    height: 90vh;
+    width: 100%;
     display: flex;
     padding: 30px;
     align-items: center;
@@ -23,7 +25,7 @@ width: 60%;
 `
 
 export const FirstViewImage = styled.div`
-width: 40%;
+width: 30%;
 align-items: center;
 display: flex;
 justify-content: center;
@@ -80,4 +82,35 @@ export const ImageWrapper = styled.div`
     &.frame-in-fadeout{
         animation: ${FrameInAnimationFadeout} 3s
     }
-    `
+`
+
+export const CarouselWrapper = styled.div`
+    padding-top: 50px;
+    width: 50%;
+    height: 80%;
+    align-items: center;
+`
+
+export const StyledSlider = styled(Slider)`
+  .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: white;
+  }
+`;
