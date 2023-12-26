@@ -18,6 +18,8 @@ export const ViewWrapper = styled.div`
     box-sizing: border-box;
     align-items: center;
 `
+
+
 export const ViewWrapperForImg = styled.div`
   height: 90vh;
   width: 100%;
@@ -26,7 +28,6 @@ export const ViewWrapperForImg = styled.div`
   align-items: center;
   background-image: url(${viewBackground});
   background-size: cover; // 배경 이미지 크기를 조절
-  background-position: center; // 배경 이미지 위치 조절
   position: relative;
 
   &::before {
@@ -101,9 +102,10 @@ export const TextWrapper = styled.div`
 `
 
 export const MainText = styled.div`
-width: 100%;
-font-size: 3rem; 
-color: white;
+    width: 100%;
+    font-size: 3rem; 
+    color: white;
+    font-weight: 700;
 `
 
 export const SubText = styled.div`

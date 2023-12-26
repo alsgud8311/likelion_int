@@ -12,12 +12,14 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import useInViewport from '../../hooks/useInViewport.jsx';
+import usePrallaxScroll from '../../hooks/useParallaxScroll.jsx';
 
 export default function Main() {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const isInViewport = useInViewport(ref1);
   const isInViewportSec = useInViewport(ref2);
+  const scroll = usePrallaxScroll();
 
   const sliderSettings = {
     dots: true,
@@ -62,7 +64,7 @@ export default function Main() {
           <img src={hackerthon} style={{maxWidth: '100%'}}/>
         </Styles.ImageWrapper>
       </Styles.ViewWrapper>
-      <Styles.ViewWrapper style={{flexDirection: 'column'}}>
+      <Styles.ViewWrapper style={{flexDirection: 'column', marginBottom:"40px"}}>
             <Styles.TextWrapper className={isInViewportSec ? "frame-in-fadeout" : ""} style={{width: '100%', padding: "0px 15% 0px 20%"}} ref={ref2}>
               <Styles.MainText>우리는 실현합니다</Styles.MainText>
               <Styles.SubText>POSSIBILITY TO REALITY라는 멋사의 슬로건처럼, 우리는 만들고 싶었던 창의적인 서비스들을 직접 계획하고, 이를 실현시키는데에 목표를 두고 있습니다.</Styles.SubText>
@@ -87,12 +89,15 @@ export default function Main() {
               </Styles.StyledSlider>
             </Styles.CarouselWrapper>
       </Styles.ViewWrapper>
-      <Styles.ViewWrapperForImg>
+      <Styles.ViewWrapperForImg style={{backgroundPositionY: scroll/3}}>
         <Styles.TextWrapper>
           <Styles.MainText style={{position: "relative", zIndex: "2"}}>우리는 함께합니다</Styles.MainText>
-          <Styles.SubText>POSSIBILITY TO REALITY라는 멋사의 슬로건처럼, 우리는 만들고 싶었던 창의적인 서비스들을 직접 계획하고, 이를 실현시키는데에 목표를 두고 있습니다.</Styles.SubText>
+          <Styles.SubText style={{position: "relative", zIndex: "2"}}>동아리 부원, 나아가 타 대학들과 연합하여 진행하는 다양한 프로젝트들을 통해 경험을 쌓아갈 수 있고, 직접 부딪히며 배우는 프로젝트로 개발자로서의 빠른 성장을 지원합니다.</Styles.SubText>
         </Styles.TextWrapper>
       </Styles.ViewWrapperForImg>
+      <Styles.ViewWrapper style={{flexDirection:"column"}}>
+            <Styles.MainText>트랙별 안내</Styles.MainText>
+      </Styles.ViewWrapper>
     </Styles.Container>
     
   );
