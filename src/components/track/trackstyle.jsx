@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Marquee from "react-fast-marquee";
 
 export const Container = styled.div`
     width: 100%;
@@ -64,31 +65,12 @@ export const DescriptionTextWrapper = styled.div`
     justify-content: center;
     font-weight: 700;
 `
-export const SkillsConatiner = styled.div`
+export const SkillsConatiner = styled(Marquee)`
     width: 100%;
-    box-sizing: border-box;
+    height: 50px;
     display: flex;
-    flex-wrap: wrap;
 `
 
-export const SkillWrapper = styled.div`
-    width: 100px;
-    height: 30px;
-    align-items: center;
-    text-align: center;
-    margin-right: 10px;
-`
-
-export const SkillName = styled.div`
-    height: 100%;
-    font-size: 14px;
-    align-items: center;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    
-`
 
 
 
