@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import Slider from 'react-slick';
+import viewBackground from "../../assets/viewBackground.png"
 
 export const Container = styled.div`
 width: 100vw;
@@ -14,8 +15,41 @@ export const ViewWrapper = styled.div`
     width: 100%;
     display: flex;
     padding: 30px;
+    box-sizing: border-box;
     align-items: center;
 `
+export const ViewWrapperForImg = styled.div`
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  background-image: url(${viewBackground});
+  background-size: cover; // 배경 이미지 크기를 조절
+  background-position: center; // 배경 이미지 위치 조절
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+`;
+
+export const TransparentBackground = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); // 검은색 배경에 50% 투명도
+`;
+
 
 export const FirstViewText = styled.div`
 color: orange;
@@ -30,6 +64,15 @@ align-items: center;
 display: flex;
 justify-content: center;
 `
+export const FrameInAnimationFadeout = keyframes`
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+`;
 
 export const FrameInAnimationSlide = keyframes`
     0% {
@@ -52,11 +95,15 @@ export const TextWrapper = styled.div`
     &.frame-in-slide{
         animation: ${FrameInAnimationSlide} 2s forwards;
     }
+    &.frame-in-fadeout{
+        animation: ${FrameInAnimationFadeout} 3s
+    }
 `
 
 export const MainText = styled.div`
 width: 100%;
 font-size: 3rem; 
+color: white;
 `
 
 export const SubText = styled.div`
@@ -64,15 +111,6 @@ width: 100%;
 font-size: 1rem;
 `
 
-export const FrameInAnimationFadeout = keyframes`
-    0% {
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
-`;
 
 export const ImageWrapper = styled.div`
     width: 40%;
@@ -89,6 +127,9 @@ export const CarouselWrapper = styled.div`
     width: 50%;
     height: 80%;
     align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
 `
 
 export const StyledSlider = styled(Slider)`
@@ -113,4 +154,35 @@ export const StyledSlider = styled(Slider)`
     opacity: .75;
     color: white;
   }
+`;
+
+export const CarouselImgWrapper = styled.div`
+  position: relative;
+  max-width: 100%;
+  &:hover .description {
+    opacity: 1;
+    visibility: visible;
+  }
+`;
+
+export const Description = styled.div`
+    padding: 30px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); // 반투명 배경
+  color: white;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
 `;
