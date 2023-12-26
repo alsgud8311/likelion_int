@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import useInViewport from '../../hooks/useInViewport.jsx';
 import usePrallaxScroll from '../../hooks/useParallaxScroll.jsx';
+import Track from '../../components/track/track.jsx';
 
 export default function Main() {
   const ref1 = useRef(null);
@@ -97,6 +98,7 @@ export default function Main() {
       </Styles.ViewWrapperForImg>
       <Styles.ViewWrapper style={{flexDirection:"column"}}>
             <Styles.MainText>트랙별 안내</Styles.MainText>
+            <Track/>
       </Styles.ViewWrapper>
     </Styles.Container>
     
