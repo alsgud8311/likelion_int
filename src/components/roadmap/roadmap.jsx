@@ -6,16 +6,20 @@ const Roadmap = () => {
         <Styles.RoadmapContainer>
             <Styles.RoadmapLine>
                 <Styles.RoadmapSection>
-                    <Styles.RoadmapCircle />
-                    <Styles.RoadmapText>3월 - 6월</Styles.RoadmapText>
+                    <Styles.RoadmapCircleLeft />
+                    {/* <Styles.RoadmapText>3월</Styles.RoadmapText> */}
                 </Styles.RoadmapSection>
                 <Styles.RoadmapSection>
-                    <Styles.RoadmapCircle />
-                    <Styles.RoadmapText>6월 - 8월</Styles.RoadmapText>
+                    <Styles.RoadmapCircleCenter style={{left:'30%'}} />
+                    {/* <Styles.RoadmapText>3월 - 6월</Styles.RoadmapText> */}
                 </Styles.RoadmapSection>
                 <Styles.RoadmapSection>
-                    <Styles.RoadmapCircle />
-                    <Styles.RoadmapText>8월 - 12월</Styles.RoadmapText>
+                    <Styles.RoadmapCircleCenter style={{right: '30%'}}/>
+                    {/* <Styles.RoadmapText>6월 - 8월</Styles.RoadmapText> */}
+                </Styles.RoadmapSection>
+                <Styles.RoadmapSection>
+                    <Styles.RoadmapCircleRight />
+                    {/* <Styles.RoadmapText>8월 - 12월</Styles.RoadmapText> */}
                 </Styles.RoadmapSection>
             </Styles.RoadmapLine>
         </Styles.RoadmapContainer>

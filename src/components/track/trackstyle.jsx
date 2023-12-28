@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Marquee from "react-fast-marquee";
+import { SubText } from "../../pages/main/mainStyle";
 
 export const Container = styled.div`
     width: 100%;
@@ -83,8 +84,40 @@ export const SkillsContainerNoMarquee = styled.div`
     width: 100%;
     height: 60px;
     display: flex;
+    margin-bottom: 20px;
 `
 
+export const TrackWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+`
+
+export const RoadmapWrapper = styled.div`
+    width: 80%;
+    display: flex;
+    justify-content: center;
+`
+
+export const MonthlyWrapper = styled.div`
+    width: 100%;
+    display: flex;
+`
+
+export const Monthdiv = styled.div`
+    width: 25%;
+    display: flex;
+    justify-content: center;
+`
+
+export const Plan = styled.div`
+    width: 33%;
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+`
 
 
 

@@ -1,36 +1,60 @@
 import styled from "styled-components";
 
-const RoadmapContainer = styled.div`
+export const RoadmapContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 30px;
+    width: 100%;
 `;
 
-const RoadmapLine = styled.div`
+export const RoadmapLine = styled.div`
     display: flex;
+    width: 100%;
     align-items: center;
-    background-color: #ddd;
+    background-color: orange;
     height: 5px;
+    justify-content: space-around;
     position: relative;
 `;
 
-const RoadmapSection = styled.div`
+export const RoadmapSection = styled.div`
     display: flex;
     flex-direction: column;
+    width: 25%;
     align-items: center;
     position: relative;
 `;
 
-const RoadmapCircle = styled.div`
-    width: 20px;
-    height: 20px;
+export const RoadmapCircleLeft = styled.div`
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: #333;
+    background-color: orange;
     position: absolute;
-    top: -8px;
+    left: 0;
+    top: -7px;
 `;
 
-const RoadmapText = styled.p`
+export const RoadmapCircleRight = styled.div`
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    top: -7px;
+    right: 0;
+`;
+
+export const RoadmapCircleCenter = styled.div`
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    top: -7px;
+`;
+
+export const RoadmapText = styled.p`
     margin-top: 30px;
 `;
