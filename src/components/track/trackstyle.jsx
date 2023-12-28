@@ -8,7 +8,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 20px;
+    box-sizing: border-box;
 `
 
 export const ButtonWrapper = styled.div`
@@ -19,6 +19,7 @@ export const ButtonWrapper = styled.div`
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
 `
 
 export const PartButton = styled.button`
@@ -69,8 +70,9 @@ export const DescriptionTextWrapper = styled.div`
     background-color: white;
     box-sizing: border-box;
     color: black;
-    justify-content: center;
+    justify-content: space-around;
     font-weight: 700;
+    
 `
 export const SkillsConatiner = styled(Marquee)`
     width: 100%;

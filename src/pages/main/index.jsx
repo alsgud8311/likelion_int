@@ -16,7 +16,6 @@ import "slick-carousel/slick/slick-theme.css";
 import useInViewport from '../../hooks/useInViewport.jsx';
 import usePrallaxScroll from '../../hooks/useParallaxScroll.jsx';
 import Track from '../../components/track/track.jsx';
-import { TrackWrapper } from '../../components/track/trackstyle.jsx';
 import Footer from '../../components/footer/footer.jsx';
 
 export default function Main() {
@@ -41,7 +40,7 @@ export default function Main() {
   return (
     <Styles.Container>
       <Header/>
-      <Styles.ViewWrapper style={{height: '80vh'}}>
+      <Styles.ViewWrapper style={{height: '90vh'}}>
         <Styles.FirstViewText>
           <TypeIt
             getBeforeInit={(instance) => {
@@ -61,7 +60,7 @@ export default function Main() {
             <Lottie animationData={computerLottie} style={{maxWidth: '100%'}}/>
           </Styles.FirstViewImage>
       </Styles.ViewWrapper>
-      <Styles.ViewWrapper style={{height: '80vh', backgroundColor: 'white', color: 'black'}}>
+      <Styles.ViewWrapper style={{height: '90vh', backgroundColor: 'white', color: 'black'}}>
         <Styles.TextWrapper className={isInViewport ? "frame-in-slide" : ""} ref={ref1}>
           <Styles.MainText style={{color: 'black'}}>우리는 도전합니다</Styles.MainText>
           <Styles.SubText>문과라서 개발자로서의 길이 힘들다는 생각에서 벗어나, 처음의 마음가짐으로 웹 개발의 처음부터 공부하고, 도전하며 성장합니다.</Styles.SubText>
@@ -70,7 +69,7 @@ export default function Main() {
           <img src={hackerthon} style={{maxWidth: '100%'}}/>
         </Styles.ImageWrapper>
       </Styles.ViewWrapper>
-      <Styles.ViewWrapper style={{flexDirection: 'column', height: '90vh',marginBottom:"40px"}}>
+      <Styles.ViewWrapper style={{flexDirection: 'column', height: '100vh',marginBottom:"40px"}}>
             <Styles.TextWrapper className={isInViewportSec ? "frame-in-fadeout" : ""} style={{width: '100%', padding: "0px 15% 0px 20%"}} ref={ref2}>
               <Styles.MainText>우리는 실현합니다</Styles.MainText>
               <Styles.SubText>POSSIBILITY TO REALITY라는 멋사의 슬로건처럼, 우리는 만들고 싶었던 창의적인 서비스들을 직접 계획하고, 이를 실현시키는데에 목표를 두고 있습니다.</Styles.SubText>
@@ -119,9 +118,9 @@ export default function Main() {
       </Styles.ViewWrapper>
       <Styles.ViewWrapper style={{flexDirection:"column"}}>
             <Styles.MainText style={{fontSize: '30px'}}>트랙별 정보 및 로드맵</Styles.MainText>
-            <TrackWrapper>
+            <Styles.TrackWrapper>
               <Track/>
-            </TrackWrapper>
+            </Styles.TrackWrapper>
       </Styles.ViewWrapper>
       <Footer/>
     </Styles.Container>
