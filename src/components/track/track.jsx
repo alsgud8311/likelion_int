@@ -88,7 +88,7 @@ const Track = () => {
                     </Styles.MonthlyWrapper>
                     <div style={{display:'flex', justifyContent:"center"}}>
                     <Styles.MonthlyWrapper style={{width: '80%'}}>
-                        <Styles.Plan>공통 세션<br/>HTML + CSS<br/><br/>프론트엔드 세션<br/>React + JS</Styles.Plan>
+                        <Styles.Plan>공통 세션<br/>HTML + CSS<br/><br/>프론트엔드 세션<br/>React<br/>JavaScript</Styles.Plan>
                         <Styles.Plan>미니해커톤<br/><br/>중앙해커톤<br/><br/>스터디</Styles.Plan>
                         <Styles.Plan>학기 프로젝트<br/><br/>연합해커톤</Styles.Plan>
                     </Styles.MonthlyWrapper>
@@ -128,7 +128,7 @@ const Track = () => {
                     </Styles.MonthlyWrapper>
                     <div style={{display:'flex', justifyContent:"center"}}>
                     <Styles.MonthlyWrapper style={{width: '80%'}}>
-                        <Styles.Plan>공통 세션<br/>HTML + CSS<br/><br/>백엔드 세션<br/>Pyhon + Django</Styles.Plan>
+                        <Styles.Plan>공통 세션<br/>HTML + CSS<br/><br/>백엔드 세션<br/>Python<br/>Django</Styles.Plan>
                         <Styles.Plan>미니해커톤<br/><br/>중앙해커톤<br/><br/>스터디</Styles.Plan>
                         <Styles.Plan>학기 프로젝트<br/><br/>연합해커톤</Styles.Plan>
                     </Styles.MonthlyWrapper>

@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import Slider from 'react-slick';
-import viewBackground from "../../assets/viewBackground.png"
+import viewBackground from "../../assets/viewBackground.jpg"
 
 export const Container = styled.div`
 width: 100vw;
@@ -22,7 +22,7 @@ export const ViewWrapper = styled.div`
 
 
 export const ViewWrapperForImg = styled.div`
-  height: 90vh;
+  height: 80%;
   width: 100%;
   display: flex;
   box-sizing: border-box;
@@ -30,6 +30,9 @@ export const ViewWrapperForImg = styled.div`
   background-image: url(${viewBackground});
   background-size: cover; // 배경 이미지 크기를 조절
   position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  
 
   &::before {
     content: '';
@@ -38,7 +41,7 @@ export const ViewWrapperForImg = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
 `;
@@ -127,8 +130,8 @@ export const ImageWrapper = styled.div`
 
 export const CarouselWrapper = styled.div`
     padding-top: 50px;
-    width: 50%;
-    height: 80%;
+    width: 70%;
+    height: 90%;
     align-items: center;
     text-align: center;
     font-size: 20px;
