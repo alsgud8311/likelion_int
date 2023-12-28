@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import Slider from 'react-slick';
 import viewBackground from "../../assets/viewBackground.jpg"
+import lion from "../../assets/lion.jpg"
 
 export const Container = styled.div`
 width: 100vw;
@@ -33,7 +34,6 @@ export const ViewWrapperForImg = styled.div`
   overflow: hidden;
   margin-bottom: 20px;
   
-
   &::before {
     content: '';
     position: absolute;
@@ -197,4 +197,70 @@ export const TrackWrapper = styled.div`
   width: 100%;
   height: 80%;
   margin-bottom: 30px;
+`
+export const ApplyWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; // 상대 위치 지정
+`
+
+export const ApplyWrapperImage = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(${lion});
+  background-size: cover; // 배경 이미지 크기를 조절
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+`
+
+export const ApplyText = styled.div`
+  width: 100%;
+  font-size: 4rem;
+  color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+`
+
+export const ApplyButtonWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+export const ApplyButton = styled.button`
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: 700;
+  width: 45%;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 0px;
+  cursor: pointer;
+  &:hover{
+    background-color: orange;
+    transition: 0.3s ease
+  }
 `

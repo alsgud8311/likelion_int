@@ -122,6 +122,16 @@ export default function Main() {
               <Track/>
             </Styles.TrackWrapper>
       </Styles.ViewWrapper>
+      <Styles.ViewWrapper style={{height: '70vh', padding: '0px'}}>
+        <Styles.ApplyWrapper>
+          <Styles.ApplyWrapperImage>
+            <Styles.ApplyText style={{position: "relative", zIndex: "2"}}>12기 멋쟁이사자처럼 지원하기</Styles.ApplyText>
+            <Styles.ApplyButtonWrapper>
+              <Styles.ApplyButton style={{position: "relative", zIndex: "2"}}>지원 홈페이지로 이동</Styles.ApplyButton>
+            </Styles.ApplyButtonWrapper>
+          </Styles.ApplyWrapperImage>
+        </Styles.ApplyWrapper>
+      </Styles.ViewWrapper>
       <Footer/>
     </Styles.Container>
 
