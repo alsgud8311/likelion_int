@@ -17,6 +17,7 @@ import useInViewport from '../../hooks/useInViewport.jsx';
 import usePrallaxScroll from '../../hooks/useParallaxScroll.jsx';
 import Track from '../../components/track/track.jsx';
 import { TrackWrapper } from '../../components/track/trackstyle.jsx';
+import Footer from '../../components/footer/footer.jsx';
 
 export default function Main() {
   const ref1 = useRef(null);
@@ -122,7 +123,8 @@ export default function Main() {
               <Track/>
             </TrackWrapper>
       </Styles.ViewWrapper>
+      <Footer/>
     </Styles.Container>
-    
+
   );
 };

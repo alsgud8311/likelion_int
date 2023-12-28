@@ -171,7 +171,6 @@ const Track = () => {
                         <Styles.Plan>학기 프로젝트<br/><br/>연합해커톤</Styles.Plan>
                     </Styles.MonthlyWrapper>
                     </div>
-                    
                 </Styles.DescriptionTextWrapper>
             </Styles.DescriptionWrapper>
             )}
