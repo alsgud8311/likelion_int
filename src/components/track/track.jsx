@@ -25,7 +25,7 @@ import goormide from "../../assets/stack/goormide.png"
 import { useState } from 'react';
 
 const Track = () => {
-    const [frontButton,setFrontButton] = useState(false);
+    const [frontButton,setFrontButton] = useState(true);
     const [backButton,setBackButton] = useState(false);
     const [pmButton, setPmButton] = useState(false);
 
