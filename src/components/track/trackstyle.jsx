@@ -14,7 +14,6 @@ export const ButtonWrapper = styled.div`
     width: 100%;
     height: 70px;
     padding: 10px;
-    background-color: white;
     border-radius: 16px;
     box-sizing: border-box;
     display: flex;
@@ -24,12 +23,18 @@ export const ButtonWrapper = styled.div`
 export const PartButton = styled.button`
     width: 20%;
     height: 100%;
-    border: 5px solid orange;
-    background-color: white;
+    padding: 5px;
+    border: 3px solid orange;
+    background-color: transparent;
+    color: white;
     border-radius: 16px;
     font-weight: 700;
     font-size: 18px;
     cursor: pointer;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: center;    
     &:hover{
         background-color: orange;
         transition: 0.5s ease;
@@ -39,7 +44,6 @@ export const PartButton = styled.button`
 export const DescriptionWrapper = styled.div`
     width: 100%;
     height: 100%;
-    background-color: white;
     border-radius: 16px;
     display: flex;
     box-sizing: border-box;
@@ -60,6 +64,8 @@ export const DescriptionTextWrapper = styled.div`
     display: flex;
     flex-direction: column;
     padding: 30px;
+    border-radius: 16px;
+    background-color: white;
     box-sizing: border-box;
     color: black;
     justify-content: center;
@@ -67,7 +73,15 @@ export const DescriptionTextWrapper = styled.div`
 `
 export const SkillsConatiner = styled(Marquee)`
     width: 100%;
-    height: 50px;
+    height: 60px;
+    display: flex;
+    gap: none;
+    margin-bottom: 20px;
+`
+
+export const SkillsContainerNoMarquee = styled.div`
+    width: 100%;
+    height: 60px;
     display: flex;
 `
 

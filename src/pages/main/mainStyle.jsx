@@ -17,6 +17,7 @@ export const ViewWrapper = styled.div`
     padding: 30px;
     box-sizing: border-box;
     align-items: center;
+    justify-content: center;
 `
 
 

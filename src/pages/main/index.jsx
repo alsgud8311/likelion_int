@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from 'react';
 import hackerthon from '../../assets/hackerthon.jpg';
 import project1 from '../../assets/project1.jpg';
 import project2 from '../../assets/project2.png';
+import project3 from '../../assets/project3.png'
 import viewBackground from "../../assets/viewBackground.png";
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -73,18 +74,25 @@ export default function Main() {
             <Styles.CarouselWrapper>
             <div style={{paddingBottom: '20px'}}>멋쟁이사자처럼 11기가 진행한 프로젝트</div>
               <Styles.StyledSlider {...sliderSettings}>
+              <Styles.CarouselImgWrapper>
+                  <img src={project3} style={{maxWidth: '100%'}}/>
+                  <Styles.Description className='description'>
+                    <div style={{fontSize: '30px', marginBottom: '20px'}}>플로키</div>
+                    <div>캐릭터 육성 플로깅 기록 서비스</div>
+                  </Styles.Description>
+                </Styles.CarouselImgWrapper>
                 <Styles.CarouselImgWrapper>
                   <img src={project1} style={{maxWidth: '100%'}}/>
                   <Styles.Description className='description'>
                     <div style={{fontSize: '30px', marginBottom: '20px'}}>세피로트</div>
-                    <div>세피로트는 친환경 사용 독려를 위해 앱테크를 접목하여 광고를 보아 포인트를 쌓고, 쌓은 포인트로 실제 나무를 심을 수 있는 서비스입니다.</div>
+                    <div>앱테크에 친환경을 접목한 식목 서비스</div>
                   </Styles.Description>
                 </Styles.CarouselImgWrapper>
                 <Styles.CarouselImgWrapper>
                   <img src={project2} style={{maxWidth: '100%'}}/>
                   <Styles.Description className='description'>
                     <div style={{fontSize: '30px', marginBottom: '20px'}}>오아시스</div>
-                    <div>오아시스는 일회용품 소비를 줄이기 위한 음수대 위치 제공 서비스입니다.</div>
+                    <div>일회용품 소비를 줄이기 위한 음수대 위치 제공 서비스</div>
                   </Styles.Description>
                 </Styles.CarouselImgWrapper>
               </Styles.StyledSlider>
