@@ -199,8 +199,9 @@ export const Description = styled.div`
 `;
 
 export const TrackWrapper = styled.div`
+  display: flex;
   width: 100%;
-  height: 80%;
+  height: 100%;
   margin-bottom: 30px;
 `
 export const ApplyWrapper = styled.div`

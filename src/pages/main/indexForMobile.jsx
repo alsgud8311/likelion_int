@@ -17,6 +17,7 @@ import useInViewport from '../../hooks/useInViewport.jsx';
 import usePrallaxScroll from '../../hooks/useParallaxScroll.jsx';
 import Track from '../../components/track/track.jsx';
 import Footer from '../../components/footer/footer.jsx';
+import TrackForMob from '../../components/trackformobile/trackForMobile.jsx';
 
 export default function MainForMobile() {
   const ref1 = useRef(null);
@@ -116,10 +117,10 @@ export default function MainForMobile() {
           </Styles.TextWrapper>
         </Styles.ViewWrapperForImg>
       </Styles.ViewWrapper>
-      <Styles.ViewWrapper style={{flexDirection:"column"}}>
+      <Styles.ViewWrapper style={{height: '120vh'}}>
             <Styles.MainText style={{fontSize: '30px'}}>트랙별 정보 및 로드맵</Styles.MainText>
             <Styles.TrackWrapper>
-              <Track/>
+              <TrackForMob/>
             </Styles.TrackWrapper>
       </Styles.ViewWrapper>
       <Styles.ViewWrapper style={{height: '70vh', padding: '0px'}}>
