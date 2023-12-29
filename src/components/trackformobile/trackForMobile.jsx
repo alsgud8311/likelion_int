@@ -61,7 +61,7 @@ const TrackForMob = () => {
                     <Lottie animationData={frontend}></Lottie>
                 </Styles.ImageWrapper>
                 <Styles.DescriptionTextWrapper>
-                    <div style={{fontSize: "30px"}}>Front-End Web Developer</div>
+                    <div style={{fontSize: "30px", paddingBottom:'10px'}}>Front-End Web Developer</div>
                     <div style={{marginBottom: "5%"}}>프론트엔드 개발자는 사용자가 웹사이트나 어플리케이션에서 서비스를 이용하는 과정에서 만날 수 있는 모든 것들을 눈으로 볼 수 있게 구현하고, 사용자가 빠르고 편리하게 서비스를 이용할 수 있는 환경을 만들어 내는 일을 합니다.</div>
                     <div>
                         <div style={{fontSize: "20px", paddingBottom: '10px'}}>배우는 기술스택</div>
@@ -77,18 +77,25 @@ const TrackForMob = () => {
                                 <StyledComponentsIcon style={{height: '50px', marginRight: '15px'}}/>
                         </Styles.SkillsConatiner>
                     </div>
-                    <div>
+                    <div style={{width: '100%'}}>
                         <div style={{fontSize: "20px", paddingBottom: '10px'}}>연간 로드맵</div>
                         <div style={{display:'flex', justifyContent:"flex-start"}}>
                             <Styles.RoadmapWrapper>
                                 <RoadmapForMob/>
                             </Styles.RoadmapWrapper>
-                            <Styles.MonthlyWrapper>
+                            <Styles.MonthlyWrapper style={{width: '30%', marginTop: '20px'}}>
                                 <Styles.Monthdiv>3월</Styles.Monthdiv>
                                 <Styles.Monthdiv>6월</Styles.Monthdiv>
                                 <Styles.Monthdiv>9월</Styles.Monthdiv>
                                 <Styles.Monthdiv>12월</Styles.Monthdiv>
                             </Styles.MonthlyWrapper>
+                        <div style={{display:'flex', justifyContent:"center", width:'100%'}}>
+                            <Styles.MonthlyWrapper style={{height: '200px', width: '70%', justifyContent:'space-between'}}>
+                                <Styles.Plan>공통 세션<br/>HTML CSS GIT<br/>+<br/>프론트엔드 세션<br/>JS + React</Styles.Plan>
+                                <Styles.Plan>미니해커톤<br/>아이디어톤<br/>중앙해커톤</Styles.Plan>
+                                <Styles.Plan>학기 프로젝트<br/>연합해커톤</Styles.Plan>
+                            </Styles.MonthlyWrapper>
+                        </div>
                         </div>
                     </div>
                 </Styles.DescriptionTextWrapper>
@@ -100,7 +107,7 @@ const TrackForMob = () => {
                     <Lottie animationData={backend}></Lottie>
                 </Styles.ImageWrapper>
                 <Styles.DescriptionTextWrapper>
-                    <div style={{fontSize: "30px"}}>Back-End Web Developer</div>
+                    <div style={{fontSize: "30px", paddingBottom:'10px'}}>Back-End Web Developer</div>
                     <div style={{marginBottom: "5%"}}>백엔드 개발자는 주로 데이터베이스 관리, 서버 로직, API(응용 프로그램 프로그래밍 인터페이스) 개발 등을 포함합니다. 백엔드 개발자는 사용자가 직접 보거나 상호작용하지 않는, 웹 어플리케이션의 '뒷면'을 담당합니다.</div>
                     <div>
                         <div style={{fontSize: "20px", paddingBottom: '10px'}}>배우는 기술스택</div>
@@ -114,27 +121,25 @@ const TrackForMob = () => {
                                 <img src={goormide} style={{height: '50px', marginRight: '15px'}}/>
                         </Styles.SkillsConatiner>
                     </div>
-                    <div>
-                        <div style={{fontSize: "20px", paddingBottom: '10px'}}>연간 로드맵</div>
-                        <div style={{display:'flex', justifyContent:"center"}}>
+                    <div style={{fontSize: "20px", paddingBottom: '10px'}}>연간 로드맵</div>
+                        <div style={{display:'flex', justifyContent:"flex-start"}}>
                             <Styles.RoadmapWrapper>
-                                <Roadmap/>
+                                <RoadmapForMob/>
                             </Styles.RoadmapWrapper>
+                            <Styles.MonthlyWrapper style={{width: '30%', marginTop:'20px'}}>
+                                <Styles.Monthdiv>3월</Styles.Monthdiv>
+                                <Styles.Monthdiv>6월</Styles.Monthdiv>
+                                <Styles.Monthdiv>9월</Styles.Monthdiv>
+                                <Styles.Monthdiv>12월</Styles.Monthdiv>
+                            </Styles.MonthlyWrapper>
+                        <div style={{display:'flex', justifyContent:"center", width:'100%'}}>
+                            <Styles.MonthlyWrapper style={{height: '200px', width: '70%', justifyContent:'space-between'}}>
+                                <Styles.Plan>공통 세션<br/>HTML CSS GIT<br/>+<br/>백엔드 세션<br/>Django+Python</Styles.Plan>
+                                <Styles.Plan>미니해커톤<br/>아이디어톤<br/>중앙해커톤</Styles.Plan>
+                                <Styles.Plan>학기 프로젝트<br/>연합해커톤</Styles.Plan>
+                            </Styles.MonthlyWrapper>
                         </div>
-                        <Styles.MonthlyWrapper>
-                            <Styles.Monthdiv>3월</Styles.Monthdiv>
-                            <Styles.Monthdiv>6월</Styles.Monthdiv>
-                            <Styles.Monthdiv>9월</Styles.Monthdiv>
-                            <Styles.Monthdiv>12월</Styles.Monthdiv>
-                        </Styles.MonthlyWrapper>
-                        <div style={{display:'flex', justifyContent:"center"}}>
-                        <Styles.MonthlyWrapper style={{width: '80%'}}>
-                            <Styles.Plan>공통 세션<br/>HTML + CSS<br/><br/>백엔드 세션<br/>Python<br/>Django</Styles.Plan>
-                            <Styles.Plan>미니해커톤<br/><br/>중앙해커톤<br/><br/>스터디</Styles.Plan>
-                            <Styles.Plan>학기 프로젝트<br/><br/>연합해커톤</Styles.Plan>
-                        </Styles.MonthlyWrapper>
                         </div>
-                    </div>
                 </Styles.DescriptionTextWrapper>
             </Styles.DescriptionWrapper>
             )}
@@ -144,7 +149,7 @@ const TrackForMob = () => {
                     <Lottie animationData={designer}></Lottie>
                 </Styles.ImageWrapper>
                 <Styles.DescriptionTextWrapper>
-                    <div style={{fontSize: "30px"}}>Product Manager/ designer</div>
+                    <div style={{fontSize: "30px", paddingBottom: '10px'}}>Product Manager/ designer</div>
                     <div style={{marginBottom: "5%"}}>프로덕트 매니저(PM)/디자이너는 전체 프로젝트의 계획, 일정, 팀 조율, 커뮤니케이션 및 품질 관리를 담당하며, 웹사이트나 애플리케이션의 시각적 디자인, 사용자 경험(UX), 사용자 인터페이스(UI)를 설계합니다. 프로젝트의 전략적 방향 설정과 실행을 총괄하며 문제 해결과 리스크 관리를 맡는 동시에 이러한 전략을 시각적으로 표현하고 사용자 친화적인 디자인으로 전환하여 프로젝트의 목표를 시각적, 기능적 측면에서 실현하는 역할을 수행합니다.</div>
                     <div>
                         <div style={{fontSize: "20px", paddingBottom: '10px'}}>배우는 기술스택</div>
@@ -156,27 +161,25 @@ const TrackForMob = () => {
                                 <GithubIcon style={{height: '50px', marginRight: '15px'}}/>
                         </Styles.SkillsContainerNoMarquee>
                     </div>
-                    <div>
                     <div style={{fontSize: "20px", paddingBottom: '10px'}}>연간 로드맵</div>
-                    <div style={{display:'flex', justifyContent:"center"}}>
-                        <Styles.RoadmapWrapper>
-                            <Roadmap/>
-                        </Styles.RoadmapWrapper>
-                    </div>
-                    <Styles.MonthlyWrapper>
-                        <Styles.Monthdiv>3월</Styles.Monthdiv>
-                         <Styles.Monthdiv>6월</Styles.Monthdiv>
-                        <Styles.Monthdiv>9월</Styles.Monthdiv>
-                        <Styles.Monthdiv>12월</Styles.Monthdiv>
-                    </Styles.MonthlyWrapper>
-                    <div style={{display:'flex', justifyContent:"center"}}>
-                    <Styles.MonthlyWrapper style={{width: '80%'}}>
-                        <Styles.Plan>PM/Design 세션<br/>Figma<br/>Notion<br/>Slack</Styles.Plan>
-                        <Styles.Plan>미니해커톤<br/><br/>중앙해커톤<br/><br/>스터디</Styles.Plan>
-                        <Styles.Plan>학기 프로젝트<br/><br/>연합해커톤</Styles.Plan>
-                    </Styles.MonthlyWrapper>
-                    </div>
-                    </div>
+                        <div style={{display:'flex', justifyContent:"flex-start"}}>
+                            <Styles.RoadmapWrapper>
+                                <RoadmapForMob/>
+                            </Styles.RoadmapWrapper>
+                            <Styles.MonthlyWrapper style={{width: '30%', marginTop:'20px'}}>
+                                <Styles.Monthdiv>3월</Styles.Monthdiv>
+                                <Styles.Monthdiv>6월</Styles.Monthdiv>
+                                <Styles.Monthdiv>9월</Styles.Monthdiv>
+                                <Styles.Monthdiv>12월</Styles.Monthdiv>
+                            </Styles.MonthlyWrapper>
+                        <div style={{display:'flex', justifyContent:"center", width:'100%'}}>
+                            <Styles.MonthlyWrapper style={{height: '200px', width: '70%', justifyContent:'space-between'}}>
+                                <Styles.Plan>공통 세션<br/>HTML CSS GIT<br/>+<br/>PM/디자이너 세션<br/>Slack, Figma</Styles.Plan>
+                                <Styles.Plan>미니해커톤<br/>아이디어톤<br/>중앙해커톤</Styles.Plan>
+                                <Styles.Plan>학기 프로젝트<br/>연합해커톤</Styles.Plan>
+                            </Styles.MonthlyWrapper>
+                        </div>
+                        </div>
                 </Styles.DescriptionTextWrapper>
             </Styles.DescriptionWrapper>
             )}

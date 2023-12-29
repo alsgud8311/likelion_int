@@ -108,7 +108,7 @@ export default function MainForPc() {
               </Styles.StyledSlider>
             </Styles.CarouselWrapper>
       </Styles.ViewWrapper>
-      <Styles.ViewWrapper style={{height: '90vh', overflow: 'hidden', padding: '0px'}}>
+      <Styles.ViewWrapper style={{height: '80vh', overflow: 'hidden', padding: '0px'}}>
         <Styles.ViewWrapperForImg style={backgroundStyle}>
           <Styles.TextWrapper style={{alignItems: 'center'}}>
             <Styles.MainText style={{position: "relative", zIndex: "2"}}>우리는 함께합니다</Styles.MainText>

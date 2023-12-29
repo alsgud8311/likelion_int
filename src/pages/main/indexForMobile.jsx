@@ -63,7 +63,7 @@ export default function MainForMobile() {
       </Styles.ViewWrapper>
       <Styles.ViewWrapper style={{height: '80vh', backgroundColor: 'white', color: 'black'}}>
         <Styles.TextWrapper className={isInViewport ? "frame-in-slide" : ""} ref={ref1}>
-          <Styles.MainText style={{color: 'black'}}>우리는 도전합니다</Styles.MainText>
+          <Styles.MainText style={{color: 'black', fontSize: '40px'}}>우리는 도전합니다</Styles.MainText>
           <Styles.SubText style={{fontSize: '1.3rem'}}>문과라서 개발자로서의 길이 힘들다는 생각에서 벗어나, 처음의 마음가짐으로 웹 개발의 처음부터 공부하고, 도전하며 성장합니다.</Styles.SubText>
         </Styles.TextWrapper>
         <Styles.ImageWrapper className={isInViewport ? "frame-in-fadeout":""}>
@@ -72,11 +72,11 @@ export default function MainForMobile() {
       </Styles.ViewWrapper>
       <Styles.ViewWrapper style={{height: '70vh',marginBottom:"40px"}}>
             <Styles.TextWrapper className={isInViewportSec ? "frame-in-fadeout" : ""} style={{width: '100%', padding: "0px 15% 0px 20%"}} ref={ref2}>
-              <Styles.MainText>우리는 실현합니다</Styles.MainText>
+              <Styles.MainText style={{fontSize: "40px"}}>우리는 실현합니다</Styles.MainText>
               <Styles.SubText style={{fontSize: '1.2rem'}}>POSSIBILITY TO REALITY라는 멋사의 슬로건처럼, 우리는 만들고 싶었던 창의적인 서비스들을 직접 계획하고, 이를 실현시키는데에 목표를 두고 있습니다.</Styles.SubText>
             </Styles.TextWrapper>
             <Styles.CarouselWrapper>
-            <div style={{fontSize: '23px', paddingBottom: '20px'}}>멋쟁이사자처럼 11기가 진행한 프로젝트</div>
+            <div style={{fontSize: '20px', paddingBottom: '20px'}}>멋쟁이사자처럼 11기가 진행한 프로젝트</div>
               <Styles.StyledSlider {...sliderSettings}>
                 <Styles.CarouselImgWrapper>
                   <img src={project4} style={{maxWidth: '100%'}}/>
@@ -117,8 +117,8 @@ export default function MainForMobile() {
           </Styles.TextWrapper>
         </Styles.ViewWrapperForImg>
       </Styles.ViewWrapper>
-      <Styles.ViewWrapper style={{height: '120vh'}}>
-            <Styles.MainText style={{fontSize: '30px'}}>트랙별 정보 및 로드맵</Styles.MainText>
+            <Styles.MainText style={{fontSize: '30px', paddingLeft: '20px'}}>트랙별 정보 및 로드맵</Styles.MainText>
+      <Styles.ViewWrapper style={{height: '150vh'}}>
             <Styles.TrackWrapper>
               <TrackForMob/>
             </Styles.TrackWrapper>

@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 export const ButtonWrapper = styled.div`
     width: 100%;
-    height: 70px;
+    height: 200px;
     padding: 10px;
     border-radius: 16px;
     box-sizing: border-box;
@@ -108,13 +108,12 @@ export const RoadmapWrapper = styled.div`
 `
 
 export const MonthlyWrapper = styled.div`
-    margin-top: 20px;
-    height: 250px;
+    height: 230px;
     font-size: 20px;
-    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 20px;
 `
 
 export const Monthdiv = styled.div`
@@ -124,10 +123,9 @@ export const Monthdiv = styled.div`
 `
 
 export const Plan = styled.div`
-    width: 33%;
+    width: 100%;
     display: flex;
-    padding: 5px;
-    box-sizing: border-box;
+    font-size: 17px;
     justify-content: center;
     text-align: center;
 `

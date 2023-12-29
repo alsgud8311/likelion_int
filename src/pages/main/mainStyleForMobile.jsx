@@ -60,7 +60,7 @@ export const TransparentBackground = styled.div`
 
 export const FirstViewText = styled.div`
 color: orange;
-font-size: 3rem;
+font-size: 2.5rem;
 font-weight: 700;
 width: 100%;
 `
@@ -135,7 +135,7 @@ export const ImageWrapper = styled.div`
 
 export const CarouselWrapper = styled.div`
     padding-top: 50px;
-    width: 100%;
+    width: 95%;
     height: 40%;
     align-items: center;
     text-align: center;
