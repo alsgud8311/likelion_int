@@ -126,7 +126,7 @@ export default function MainForMobile() {
         </Styles.ViewWrapperForImg>
       </Styles.ViewWrapper>
             <Styles.MainText style={{fontSize: '30px', paddingLeft: '20px'}}>트랙별 정보 및 로드맵</Styles.MainText>
-      <Styles.ViewWrapper style={{height: '150vh'}}>
+      <Styles.ViewWrapper style={{height: '180vh', padding: '20px'}}>
             <Styles.TrackWrapper>
               <TrackForMob/>
             </Styles.TrackWrapper>

@@ -107,15 +107,14 @@ export const TextWrapper = styled.div`
 
 export const MainText = styled.div`
     width: 100%;
-    height: 30%;
     font-size: 3rem;
     color: white;
     font-weight: 700;
 `
 
 export const SubText = styled.div`
-width: 100%;
-font-size: 1rem;
+  width: 100%;
+  font-size: 1rem;
 `
 
 
@@ -196,7 +195,7 @@ export const Description = styled.div`
 
 export const TrackWrapper = styled.div`
   width: 100%;
-  height: 50%;
+  height: 100%;
   margin-bottom: 30px;
 `
 export const ApplyWrapper = styled.div`

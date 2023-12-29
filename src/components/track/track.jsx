@@ -92,7 +92,7 @@ const Track = () => {
                         <div style={{display:'flex', justifyContent:"center"}}>
                         <Styles.MonthlyWrapper style={{width: '80%'}}>
                             <Styles.Plan>공통 세션<br/>HTML + CSS<br/><br/>프론트엔드 세션<br/>React<br/>JavaScript</Styles.Plan>
-                            <Styles.Plan>미니해커톤<br/><br/>중앙해커톤<br/><br/>스터디</Styles.Plan>
+                            <Styles.Plan>미니해커톤<br/><br/>중앙해커톤<br/><br/>아이디어톤</Styles.Plan>
                             <Styles.Plan>학기 프로젝트<br/><br/>연합해커톤</Styles.Plan>
                         </Styles.MonthlyWrapper>
                         </div>
@@ -136,7 +136,7 @@ const Track = () => {
                         <div style={{display:'flex', justifyContent:"center"}}>
                         <Styles.MonthlyWrapper style={{width: '80%'}}>
                             <Styles.Plan>공통 세션<br/>HTML + CSS<br/><br/>백엔드 세션<br/>Python<br/>Django</Styles.Plan>
-                            <Styles.Plan>미니해커톤<br/><br/>중앙해커톤<br/><br/>스터디</Styles.Plan>
+                            <Styles.Plan>미니해커톤<br/><br/>중앙해커톤<br/><br/>아이디어톤</Styles.Plan>
                             <Styles.Plan>학기 프로젝트<br/><br/>연합해커톤</Styles.Plan>
                         </Styles.MonthlyWrapper>
                         </div>
@@ -177,8 +177,8 @@ const Track = () => {
                     </Styles.MonthlyWrapper>
                     <div style={{display:'flex', justifyContent:"center"}}>
                     <Styles.MonthlyWrapper style={{width: '80%'}}>
-                        <Styles.Plan>PM/Design 세션<br/>Figma<br/>Notion<br/>Slack</Styles.Plan>
-                        <Styles.Plan>미니해커톤<br/><br/>중앙해커톤<br/><br/>스터디</Styles.Plan>
+                        <Styles.Plan>PM/Design 세션<br/>Figma<br/>Slack<br/>IT 기초지식</Styles.Plan>
+                        <Styles.Plan>미니해커톤<br/><br/>중앙해커톤<br/><br/>아이디어톤</Styles.Plan>
                         <Styles.Plan>학기 프로젝트<br/><br/>연합해커톤</Styles.Plan>
                     </Styles.MonthlyWrapper>
                     </div>

@@ -90,7 +90,7 @@ const TrackForMob = () => {
                                 <Styles.Monthdiv>12월</Styles.Monthdiv>
                             </Styles.MonthlyWrapper>
                         <div style={{display:'flex', justifyContent:"center", width:'100%'}}>
-                            <Styles.MonthlyWrapper style={{height: '200px', width: '70%', justifyContent:'space-between'}}>
+                            <Styles.MonthlyWrapper style={{height: '200px', width: '80%', justifyContent:'space-between'}}>
                                 <Styles.Plan>공통 세션<br/>HTML CSS GIT<br/>+<br/>프론트엔드 세션<br/>JS + React</Styles.Plan>
                                 <Styles.Plan>미니해커톤<br/>아이디어톤<br/>중앙해커톤</Styles.Plan>
                                 <Styles.Plan>학기 프로젝트<br/>연합해커톤</Styles.Plan>
@@ -133,7 +133,7 @@ const TrackForMob = () => {
                                 <Styles.Monthdiv>12월</Styles.Monthdiv>
                             </Styles.MonthlyWrapper>
                         <div style={{display:'flex', justifyContent:"center", width:'100%'}}>
-                            <Styles.MonthlyWrapper style={{height: '200px', width: '70%', justifyContent:'space-between'}}>
+                            <Styles.MonthlyWrapper style={{height: '200px', width: '80%', justifyContent:'space-between'}}>
                                 <Styles.Plan>공통 세션<br/>HTML CSS GIT<br/>+<br/>백엔드 세션<br/>Django+Python</Styles.Plan>
                                 <Styles.Plan>미니해커톤<br/>아이디어톤<br/>중앙해커톤</Styles.Plan>
                                 <Styles.Plan>학기 프로젝트<br/>연합해커톤</Styles.Plan>
@@ -150,7 +150,7 @@ const TrackForMob = () => {
                 </Styles.ImageWrapper>
                 <Styles.DescriptionTextWrapper>
                     <div style={{fontSize: "30px", paddingBottom: '10px'}}>Product Manager/ designer</div>
-                    <div style={{marginBottom: "5%"}}>프로덕트 매니저(PM)/디자이너는 전체 프로젝트의 계획, 일정, 팀 조율, 커뮤니케이션 및 품질 관리를 담당하며, 웹사이트나 애플리케이션의 시각적 디자인, 사용자 경험(UX), 사용자 인터페이스(UI)를 설계합니다. 프로젝트의 전략적 방향 설정과 실행을 총괄하며 문제 해결과 리스크 관리를 맡는 동시에 이러한 전략을 시각적으로 표현하고 사용자 친화적인 디자인으로 전환하여 프로젝트의 목표를 시각적, 기능적 측면에서 실현하는 역할을 수행합니다.</div>
+                    <div style={{marginBottom: "5%"}}>프로덕트 매니저(PM)/디자이너는 전체 프로젝트의 계획, 일정, 팀 조율, 커뮤니케이션 및 품질 관리를 담당하며, 웹사이트나 애플리케이션의 시각적 디자인, 사용자 경험(UX), 사용자 인터페이스(UI)를 설계합니다.</div>
                     <div>
                         <div style={{fontSize: "20px", paddingBottom: '10px'}}>배우는 기술스택</div>
                         <Styles.SkillsContainerNoMarquee>
@@ -173,8 +173,8 @@ const TrackForMob = () => {
                                 <Styles.Monthdiv>12월</Styles.Monthdiv>
                             </Styles.MonthlyWrapper>
                         <div style={{display:'flex', justifyContent:"center", width:'100%'}}>
-                            <Styles.MonthlyWrapper style={{height: '200px', width: '70%', justifyContent:'space-between'}}>
-                                <Styles.Plan>공통 세션<br/>HTML CSS GIT<br/>+<br/>PM/디자이너 세션<br/>Slack, Figma</Styles.Plan>
+                            <Styles.MonthlyWrapper style={{height: '200px', width: '80%', justifyContent:'space-between'}}>
+                                <Styles.Plan>공통 세션<br/>HTML CSS GIT<br/>+<br/>PM/디자이너<br/>Slack, Figma</Styles.Plan>
                                 <Styles.Plan>미니해커톤<br/>아이디어톤<br/>중앙해커톤</Styles.Plan>
                                 <Styles.Plan>학기 프로젝트<br/>연합해커톤</Styles.Plan>
                             </Styles.MonthlyWrapper>

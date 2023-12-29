@@ -124,8 +124,8 @@ export default function MainForPc() {
           </Styles.TextWrapper>
         </Styles.ViewWrapperForImg>
       </Styles.ViewWrapper>
-      <Styles.ViewWrapper style={{flexDirection:"column"}}>
-            <Styles.MainText style={{fontSize: '30px'}}>트랙별 정보 및 로드맵</Styles.MainText>
+            <Styles.MainText style={{fontSize: '30px', paddingLeft: '30px'}}>트랙별 정보 및 로드맵</Styles.MainText>
+      <Styles.ViewWrapper style={{height: '110vh', flexDirection:"column"}}>
             <Styles.TrackWrapper>
               <Track/>
             </Styles.TrackWrapper>
@@ -135,7 +135,7 @@ export default function MainForPc() {
           <Styles.ApplyWrapperImage>
             <Styles.ApplyText style={{position: "relative", zIndex: "2"}}>12기 멋쟁이사자처럼 지원하기</Styles.ApplyText>
             <Styles.ApplyButtonWrapper>
-              <Styles.ApplyButton style={{position: "relative", zIndex: "2"}}>지원 홈페이지로 이동</Styles.ApplyButton>
+              <Styles.ApplyButton style={{position: "relative", zIndex: "2"}} onClick={() => {alert('지원기간이 아닙니다. 운영진 지원은 개별 구글폼을 이용해주세요 :)')}}>지원 홈페이지로 이동</Styles.ApplyButton>
             </Styles.ApplyButtonWrapper>
           </Styles.ApplyWrapperImage>
         </Styles.ApplyWrapper>
