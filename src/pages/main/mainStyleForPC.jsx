@@ -9,6 +9,7 @@ background-color: black;
 color: white;
 display: flex;
 flex-direction: column;
+overflow-x: hidden;
 `
 
 export const ViewWrapper = styled.div`

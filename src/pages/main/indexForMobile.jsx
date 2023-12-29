@@ -137,7 +137,7 @@ export default function MainForMobile() {
           <Styles.ApplyWrapperImage>
             <Styles.ApplyText style={{position: "relative", zIndex: "2"}}>12기 멋쟁이사자처럼 지원하기</Styles.ApplyText>
             <Styles.ApplyButtonWrapper>
-              <Styles.ApplyButton style={{position: "relative", zIndex: "2"}} onClick={() => {alert(`지원기간이 아닙니다. 운영진 모집은 구글폼을 이용해 주세요 :)`)}}>지원 페이지로 이동</Styles.ApplyButton>
+              <Styles.ApplyButton style={{position: "relative", zIndex: "2", color: 'black'}} onClick={() => {alert(`지원기간이 아닙니다. 운영진 모집은 구글폼을 이용해 주세요 :)`)}}>지원 페이지로 이동</Styles.ApplyButton>
             </Styles.ApplyButtonWrapper>
           </Styles.ApplyWrapperImage>
         </Styles.ApplyWrapper>
