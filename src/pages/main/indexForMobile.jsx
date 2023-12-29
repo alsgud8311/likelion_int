@@ -19,6 +19,7 @@ import usePrallaxScroll from '../../hooks/useParallaxScroll.jsx';
 import Track from '../../components/track/track.jsx';
 import Footer from '../../components/footer/footer.jsx';
 import TrackForMob from '../../components/trackformobile/trackForMobile.jsx';
+import HeaderForMob from '../../components/HeaderForMob/headerForMob.jsx';
 
 export default function MainForMobile() {
   const ref1 = useRef(null);
@@ -41,7 +42,7 @@ export default function MainForMobile() {
 
   return (
     <Styles.Container>
-      <Header/>
+      <HeaderForMob/>
       <Styles.ViewWrapper style={{height: '100vh'}}>
         <Styles.FirstViewImage>
             <Lottie animationData={computerLottie} style={{maxWidth: '100%'}}/>
