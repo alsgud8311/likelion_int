@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Marquee from "react-fast-marquee";
-import { SubText } from "../../pages/main/mainStyle";
+import { SubText } from "../../pages/main/mainStyleForPC";
 
 export const Container = styled.div`
     width: 100%;
