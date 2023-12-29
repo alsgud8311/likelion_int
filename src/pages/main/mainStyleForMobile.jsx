@@ -20,7 +20,7 @@ export const ViewWrapper = styled.div`
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 `
 
 
@@ -94,7 +94,7 @@ export const FrameInAnimationSlide = keyframes`
 `;
 
 export const TextWrapper = styled.div`
-    width: 40%;
+    width: 100%;
     font-weight: 700;
     flex-direction: column;
     margin-right: 5%;
@@ -121,10 +121,13 @@ font-size: 1rem;
 
 
 export const ImageWrapper = styled.div`
-    width: 40%;
-    height: 100%;
+    width: 100%;
+    height: 40%;
     display: flex;
     align-items: center;
+    box-shadow: 5px 5px;
+    object-fit: cover;
+    box-sizing: border-box;
     &.frame-in-fadeout{
         animation: ${FrameInAnimationFadeout} 3s
     }
@@ -132,8 +135,8 @@ export const ImageWrapper = styled.div`
 
 export const CarouselWrapper = styled.div`
     padding-top: 50px;
-    width: 70%;
-    height: 90%;
+    width: 100%;
+    height: 40%;
     align-items: center;
     text-align: center;
     font-size: 20px;

@@ -26,7 +26,7 @@ export default function MainForMobile() {
   const scroll = usePrallaxScroll();
 
   const backgroundStyle = {
-    backgroundPositionY: `${150 + scroll / -11}px`,
+    backgroundPositionY: `${200 + scroll / -13}px`,
   };
 
   const sliderSettings = {
@@ -60,22 +60,22 @@ export default function MainForMobile() {
             }}/>
           </Styles.FirstViewText>
       </Styles.ViewWrapper>
-      <Styles.ViewWrapper style={{height: '90vh', backgroundColor: 'white', color: 'black'}}>
+      <Styles.ViewWrapper style={{height: '80vh', backgroundColor: 'white', color: 'black'}}>
         <Styles.TextWrapper className={isInViewport ? "frame-in-slide" : ""} ref={ref1}>
           <Styles.MainText style={{color: 'black'}}>우리는 도전합니다</Styles.MainText>
-          <Styles.SubText>문과라서 개발자로서의 길이 힘들다는 생각에서 벗어나, 처음의 마음가짐으로 웹 개발의 처음부터 공부하고, 도전하며 성장합니다.</Styles.SubText>
+          <Styles.SubText style={{fontSize: '1.3rem'}}>문과라서 개발자로서의 길이 힘들다는 생각에서 벗어나, 처음의 마음가짐으로 웹 개발의 처음부터 공부하고, 도전하며 성장합니다.</Styles.SubText>
         </Styles.TextWrapper>
         <Styles.ImageWrapper className={isInViewport ? "frame-in-fadeout":""}>
-          <img src={hackerthon} style={{maxWidth: '100%'}}/>
+          <img src={hackerthon} style={{width: '100%',height: '100%'}}/>
         </Styles.ImageWrapper>
       </Styles.ViewWrapper>
-      <Styles.ViewWrapper style={{flexDirection: 'column', height: '100vh',marginBottom:"40px"}}>
+      <Styles.ViewWrapper style={{height: '70vh',marginBottom:"40px"}}>
             <Styles.TextWrapper className={isInViewportSec ? "frame-in-fadeout" : ""} style={{width: '100%', padding: "0px 15% 0px 20%"}} ref={ref2}>
               <Styles.MainText>우리는 실현합니다</Styles.MainText>
-              <Styles.SubText>POSSIBILITY TO REALITY라는 멋사의 슬로건처럼, 우리는 만들고 싶었던 창의적인 서비스들을 직접 계획하고, 이를 실현시키는데에 목표를 두고 있습니다.</Styles.SubText>
+              <Styles.SubText style={{fontSize: '1.2rem'}}>POSSIBILITY TO REALITY라는 멋사의 슬로건처럼, 우리는 만들고 싶었던 창의적인 서비스들을 직접 계획하고, 이를 실현시키는데에 목표를 두고 있습니다.</Styles.SubText>
             </Styles.TextWrapper>
             <Styles.CarouselWrapper>
-            <div style={{fontSize: '25px', paddingBottom: '20px'}}>멋쟁이사자처럼 11기가 진행한 프로젝트</div>
+            <div style={{fontSize: '23px', paddingBottom: '20px'}}>멋쟁이사자처럼 11기가 진행한 프로젝트</div>
               <Styles.StyledSlider {...sliderSettings}>
                 <Styles.CarouselImgWrapper>
                   <img src={project4} style={{maxWidth: '100%'}}/>
@@ -112,7 +112,7 @@ export default function MainForMobile() {
         <Styles.ViewWrapperForImg style={backgroundStyle}>
           <Styles.TextWrapper style={{alignItems: 'center'}}>
             <Styles.MainText style={{position: "relative", zIndex: "2"}}>우리는 함께합니다</Styles.MainText>
-            <Styles.SubText style={{position: "relative", zIndex: "2"}}>동아리 부원, 나아가 타 대학들과 연합하여 진행하는 다양한 프로젝트들을 통해 경험을 쌓아갈 수 있고, 직접 부딪히며 배우는 프로젝트로 개발자로서의 빠른 성장을 지원합니다.</Styles.SubText>
+            <Styles.SubText style={{position: "relative", zIndex: "2", fontSize: '1.2rem'}}>동아리 부원, 나아가 타 대학들과 연합하여 진행하는 다양한 프로젝트들을 통해 경험을 쌓아갈 수 있고, 직접 부딪히며 배우는 프로젝트로 개발자로서의 빠른 성장을 지원합니다.</Styles.SubText>
           </Styles.TextWrapper>
         </Styles.ViewWrapperForImg>
       </Styles.ViewWrapper>
