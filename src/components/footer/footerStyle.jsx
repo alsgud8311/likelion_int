@@ -6,6 +6,9 @@ export const Container = styled.div`
     background-color: rgba(255,255,255,0.1);
     border-radius: 20px;
     display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;

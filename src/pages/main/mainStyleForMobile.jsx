@@ -223,6 +223,7 @@ export const ApplyWrapperImage = styled.div`
   align-items: center;
   background-image: url(${lion});
   background-size: cover; // 배경 이미지 크기를 조절
+  background-position: center;
   position: relative;
 
   &::before {
@@ -239,7 +240,7 @@ export const ApplyWrapperImage = styled.div`
 
 export const ApplyText = styled.div`
   width: 100%;
-  font-size: 4rem;
+  font-size: 2rem;
   color: orange;
   display: flex;
   justify-content: center;
@@ -260,7 +261,7 @@ export const ApplyButton = styled.button`
   padding: 10px;
   border-radius: 30px;
   font-weight: 700;
-  width: 45%;
+  width: 60%;
   font-size: 1.5rem;
   background-color: white;
   border: 0px;
