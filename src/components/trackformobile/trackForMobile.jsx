@@ -103,7 +103,7 @@ const TrackForMob = () => {
             )}
             {backButton && (
             <Styles.DescriptionWrapper>
-                <Styles.ImageWrapper style={{maxWidth: '50%'}}>
+                <Styles.ImageWrapper style={{maxWidth: '100%'}}>
                     <Lottie animationData={backend}></Lottie>
                 </Styles.ImageWrapper>
                 <Styles.DescriptionTextWrapper>

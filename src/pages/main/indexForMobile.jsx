@@ -8,7 +8,8 @@ import hackerthon from '../../assets/hackerthon.jpg';
 import project1 from '../../assets/project1.jpg';
 import project2 from '../../assets/project2.png';
 import project3 from '../../assets/project3.png';
-import project4 from '../../assets/project4.png'
+import project4 from '../../assets/project4.png';
+import project5 from '../../assets/project5.png';
 import viewBackground from "../../assets/viewBackground.jpg";
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -104,6 +105,13 @@ export default function MainForMobile() {
                   <Styles.Description className='description'>
                     <div style={{fontSize: '30px', marginBottom: '20px'}}>오아시스</div>
                     <div>일회용품 소비를 줄이기 위한 음수대 위치 제공 서비스</div>
+                  </Styles.Description>
+                </Styles.CarouselImgWrapper>
+                <Styles.CarouselImgWrapper>
+                  <img src={project5} style={{maxWidth: '100%'}}/>
+                  <Styles.Description className='description'>
+                    <div style={{fontSize: '30px', marginBottom: '20px'}}>분리할래</div>
+                    <div>분리수거 활성화를 위한 교육용 게임</div>
                   </Styles.Description>
                 </Styles.CarouselImgWrapper>
               </Styles.StyledSlider>
