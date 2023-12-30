@@ -1,12 +1,12 @@
 import { createGlobalStyle } from "styled-components";
-import lineseed from './font/LINESeedKR-Rg.ttf'
+import apple from './font/appleSDGothicNeoR.ttf'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-          font-family: 'lineseed';
-          src: local('lineseed'), local('lineseed');
+          font-family: 'apple';
+          src: local('apple'), local('apple');
           font-style: normal;
-          src: url(${lineseed}) format('truetype');
+          src: url(${apple}) format('truetype');
       }
       
   *, *::before, *::after {
@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: lineseed;
+    font-family: apple;
     line-height: 1.3;
   }
 `

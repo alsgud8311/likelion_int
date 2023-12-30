@@ -61,7 +61,7 @@ export const TransparentBackground = styled.div`
 
 export const FirstViewText = styled.div`
 color: orange;
-font-size: 2.5rem;
+font-size: 2.3rem;
 font-weight: 700;
 width: 100%;
 `
@@ -110,7 +110,7 @@ export const TextWrapper = styled.div`
 
 export const MainText = styled.div`
     width: 100%;
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: white;
     font-weight: 700;
 `
@@ -241,7 +241,7 @@ export const ApplyWrapperImage = styled.div`
 
 export const ApplyText = styled.div`
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: orange;
   display: flex;
   justify-content: center;
@@ -259,11 +259,11 @@ export const ApplyButtonWrapper = styled.div`
 `
 
 export const ApplyButton = styled.button`
-  padding: 10px;
+  padding: 5px;
   border-radius: 30px;
   font-weight: 700;
   width: 60%;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: white;
   border: 0px;
   cursor: pointer;
