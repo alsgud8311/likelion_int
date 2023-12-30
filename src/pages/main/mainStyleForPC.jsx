@@ -234,7 +234,7 @@ export const ApplyWrapperImage = styled.div`
 
 export const ApplyText = styled.div`
   width: 100%;
-  font-size: 4rem;
+  font-size: 3rem;
   color: orange;
   display: flex;
   justify-content: center;
