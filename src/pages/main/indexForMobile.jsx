@@ -75,7 +75,7 @@ export default function MainForMobile() {
       <Styles.ViewWrapper style={{height: '70vh',marginBottom:"40px"}}>
             <Styles.TextWrapper className={isInViewportSec ? "frame-in-fadeout" : ""} style={{width: '100%', padding: "0px 15% 0px 20%"}} ref={ref2}>
               <Styles.MainText style={{fontSize: "35px", paddingBottom: '10px'}}>우리는 실현합니다</Styles.MainText>
-              <Styles.SubText style={{fontSize: '1.2rem'}}>'POSSIBILITY TO REALITY'라는 멋사의 슬로건처럼, 우리는 만들고 싶었던 창의적인 서비스들을 직접 계획하고, 이를 실현시키는데에 목표를 두고 있습니다.</Styles.SubText>
+              <Styles.SubText style={{fontSize: '1.2rem'}}>'POSSIBILITY TO  REALITY'<br/>우리는 만들고 싶었던 창의적인 서비스들을 직접 계획하고, 이를 실현시키는데에 목표를 두고 있습니다.</Styles.SubText>
             </Styles.TextWrapper>
             <Styles.CarouselWrapper>
             <div style={{fontSize: '20px', paddingBottom: '20px'}}>멋쟁이사자처럼 11기가 진행한 프로젝트</div>
