@@ -108,7 +108,7 @@ export const TextWrapper = styled.div`
 
 export const MainText = styled.div`
     width: 100%;
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: white;
     font-weight: 700;
 `
